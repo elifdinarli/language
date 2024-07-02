@@ -35,7 +35,7 @@ with st.form(key="language selection"):
         else:
             st.markdown(f"[Let Toucan help you while we're adding {language}!](https://jointoucan.com/)")
 
-st.success("User actions are being logged.")
+
 
 
 
