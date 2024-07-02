@@ -13,7 +13,7 @@ import pandas as pd
 # In[ ]:
 
 
-st.title("Learn a new language")
+
 
 
 # In[ ]:
