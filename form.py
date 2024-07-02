@@ -37,7 +37,7 @@ with st.form(key="language selection"):
         if language == "Spanish":
             st.link_button(f"Babbel is the right place to learn {language}!", "https://my.babbel.com/en_GB/product-preview/SPA/default/node/0")
         else:
-            st.link_button(f"[Let Toucan help you while we're adding {language}!, "https://jointoucan.com/")
+            st.link_button(f"Let Toucan help you while we're adding {language}!", "https://jointoucan.com/")
 
 
 
