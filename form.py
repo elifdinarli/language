@@ -17,7 +17,7 @@ def log_action_to_gsheet(language, action):
     creds = Credentials.from_service_account_info(st.secrets["gcp_service_account"], scopes=scope)
     client = gspread.authorize(creds)
 
-    sheet = client.open("https://docs.google.com/spreadsheets/d/1ltnW3wecxJwgjMioigtBR5jz_o2GAPmnHJ1rHpcPu7Q/edit?gid=0#gid=0").sheet1  # Use your Google Sheet name or URL
+    sheet = client.open("1ltnW3wecxJwgjMioigtBR5jz_o2GAPmnHJ1rHpcPu7Q").sheet1  # Use your Google Sheet name or URL
 
     # Add a new row with the logged action
     row = [language, action, st.time()]
