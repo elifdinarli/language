@@ -32,7 +32,7 @@ with st.form(key="language selection"):
         log_action_to_gsheet(language, action)
      if language == "Spanish":
         st.markdown(f"[Babbel is the right place to learn {language}!](https://my.babbel.com/en_GB/product-preview/SPA/default/node/0)")
-    else:
+     else:
         st.markdown(f"[Let Toucan help you while we're adding {language}!](https://jointoucan.com/)")
 
 st.success("User actions are being logged.")
