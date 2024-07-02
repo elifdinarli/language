@@ -10,6 +10,8 @@ import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
 import json
+from datetime import datetime
+
 
 
 def log_action_to_gsheet(language, action):
@@ -21,7 +23,8 @@ def log_action_to_gsheet(language, action):
     sheet = client.open_by_key(sheet_id).sheet1
 
     # Add a new row with the logged action
-    row = [language, action, st.time()]
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    row = [language, action, timestamp]
     sheet.append_row(row)
 
 
