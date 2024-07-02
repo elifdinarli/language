@@ -24,7 +24,7 @@ def log_action_to_gsheet(language, action):
     sheet.append_row(row)
 
 
-with st.form(key="language selection")
+with st.form(key="language selection"):
     language = st.selectbox("Which language do you want to learn?", ["Spanish", "Japanese"])
     submit_button = st.form_submit_button(label='Get Started!')
     if submit_button:
