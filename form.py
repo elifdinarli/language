@@ -83,6 +83,7 @@ def banner(content_type, entry_title, color_palette, title, layout, cta):
 
 
 for index, row in df.iterrows():
+    content_type = row['content_type']
     entry_title = row['entry_title']
     color_palette = row['color_palette']
     title = row['title']
