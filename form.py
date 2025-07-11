@@ -88,7 +88,7 @@ for index, row in df.iterrows():
     title = row['title']
     layout = row['layout']
     cta = row['cta']
-    entry_id = banner(entry_title, color_palette, title, layout, cta)
+    entry_id = banner(content_type, entry_title, color_palette, title, layout, cta)
     url = "https://app.contentful.com/spaces/zuzqvf4m2o58/environments/master/entries/"+str(entry_id)
     st.write(entry_title)
     st.link_button("Click me", url)
